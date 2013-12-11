@@ -1,0 +1,17 @@
+language: python
+
+python:
+ - "2.7"
+ - "3.2"
+ - "3.3"
+
+install:
+ - if [[ $TRAVIS_PYTHON_VERSION == 2* ]]; then sudo apt-get install -qq python-dbus; fi
+ - if [[ $TRAVIS_PYTHON_VERSION == 3* ]]; then sudo apt-get install -qq python3-dbus; fi
+
+before_script:
+  - rm $VIRTUAL_ENV/lib/python$TRAVIS_PYTHON_VERSION/no-global-site-packages.txt
+
+script:
+ - python setup.py test
+ - python setup.py install

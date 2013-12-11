@@ -1,4 +1,8 @@
 # pympris #
+[![Build Status](https://travis-ci.org/wistful/pympris.png?branch=master)](https://travis-ci.org/wistful/pympris)
+[![PyPI Version](https://pypip.in/v/pympris/badge.png)](https://crate.io/packages/pympris/)
+[![PyPI Downloads](https://pypip.in/d/pympris/badge.png)](https://crate.io/packages/pympris/)
+
 This is a Python wrapper around the MPRIS2 interfaces of media players.
 
 ## Requires ##
